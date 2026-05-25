@@ -1,0 +1,27 @@
+description: >-
+  High accuracy single embedding-based person re-identification model.
+  Uses OmniScaleNet backbone with Linear Context Transform (LCT) blocks.
+  Produces a 256-float embedding vector for cosine-distance matching.
+author: Intel OpenVINO Open Model Zoo
+date: "2023.0"
+version: "0277"
+license: Apache-2.0 (https://raw.githubusercontent.com/openvinotoolkit/open_model_zoo/master/LICENSE)
+docs: https://docs.openvino.ai/2024/omz_models_model_person_reidentification_retail_0277.html
+source_family: retail
+origin: imported third-party model (Intel pre-trained)
+repo_trained: false
+task: object_attributes
+precision: FP16
+batch: 1
+imgsz:
+- 256
+- 128
+source_framework: dldt
+input_name: data
+input_layout: NCHW
+gflops: 0.564
+mparams: 2.024
+output_shape:
+- 1
+- 256
+output_description: 256-dimensional embedding vector for person re-identification

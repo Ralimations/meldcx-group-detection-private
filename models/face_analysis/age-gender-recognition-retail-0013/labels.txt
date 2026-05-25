@@ -1,0 +1,5 @@
+# age-gender-recognition-retail-0013 outputs
+# gender head (`prob`): index 0 = Female, index 1 = Male
+# age head (`age_conv3`): scalar normalized age in [0,1], multiply by 100
+Female
+Male

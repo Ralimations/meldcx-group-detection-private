@@ -1,0 +1,38 @@
+description: OpenVINO retail face detector imported into this repo
+author: Intel OpenVINO Open Model Zoo
+date: unknown
+version: 0004
+license: See original OpenVINO Open Model Zoo model license
+docs: https://docs.openvino.ai/2023.3/omz_models_model_face_detection_retail_0004.html
+source_family: retail
+origin: imported third-party model
+repo_trained: false
+task: detect
+batch: 1
+imgsz:
+- 300
+- 300
+source_framework: Caffe
+average_precision_wider: 83.00%
+min_evaluated_face_size:
+- 60
+- 60
+gflops: 1.067
+mparams: 0.588
+input_blob: data
+output_shape:
+- 1
+- 1
+- 200
+- 7
+output_format:
+- image_id
+- label
+- conf
+- x_min
+- y_min
+- x_max
+- y_max
+names:
+  0: background
+  1: face

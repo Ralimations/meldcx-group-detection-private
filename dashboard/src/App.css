@@ -1,0 +1,29 @@
+/* Global Theme Tokens */
+:root {
+  --primary: #1677ff;
+  --bg-subtle: #f8fafc;
+  --border: #e2e8f0;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.right-sidebar {
+  width: 350px;
+  background: #fff;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.right-sidebar.collapsed {
+  width: 0;
+  border-left: none;
+}
+
+.sensor-row-hover:hover > td { background-color: #f0f7ff !important; }

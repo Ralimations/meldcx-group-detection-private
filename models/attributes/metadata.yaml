@@ -1,0 +1,33 @@
+description: OpenVINO person attributes classification model imported into this repo
+author: Intel OpenVINO Open Model Zoo
+date: unknown
+version: 0234
+license: See original OpenVINO Open Model Zoo model license
+docs: https://docs.openvino.ai/2023.3/omz_models_model_person_attributes_recognition_crossroad_0234.html
+source_family: crossroad
+origin: imported third-party model
+repo_trained: false
+task: classification
+batch: 1
+imgsz:
+- 160
+- 80
+source_framework: PyTorch
+pedestrian_pose: Standing person
+occlusion_coverage: <20%
+min_object_width: 80
+gflops: 2.167
+mparams: 23.510
+output_blob: attributes
+output_shape:
+- 1
+- 7
+output_threshold: 0.5
+names:
+  0: is_male
+  1: has_bag
+  2: has_hat
+  3: has_longsleeves
+  4: has_longpants
+  5: has_longhair
+  6: has_coat_jacket

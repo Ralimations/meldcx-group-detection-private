@@ -1,0 +1,42 @@
+description: OpenVINO retail age/gender recognition model imported into this repo
+author: Intel OpenVINO Open Model Zoo
+date: unknown
+version: 0013
+license: See original OpenVINO Open Model Zoo model license
+docs: https://docs.openvino.ai/2023.3/omz_models_model_age_gender_recognition_retail_0013.html
+source_family: retail
+origin: imported third-party model
+repo_trained: false
+task: classification
+batch: 1
+imgsz:
+- 62
+- 62
+source_framework: Caffe
+age_range: 18-75
+child_applicability: not_applicable
+rotation_in_plane: ±45deg
+rotation_out_of_plane: Yaw ±45deg / Pitch ±45deg
+min_object_width: 62
+gflops: 0.094
+mparams: 2.138
+age_error_years: 6.99
+gender_accuracy: 95.80%
+input_blob: data
+gender_output_blob: prob
+gender_output_shape:
+- 1
+- 2
+- 1
+- 1
+age_output_blob: fc3_a
+age_output_shape:
+- 1
+- 1
+- 1
+- 1
+names:
+  0: Female
+  1: Male
+notes:
+- Age output is estimated age divided by 100.

@@ -1,0 +1,15 @@
+description: Ultralytics YOLOv5n model trained on /skunkworks/data/datasets/z70q24vc50eya5pi48zalykc9cy69ck7/coco/data.yaml
+author: Ultralytics
+date: '2026-02-11T15:11:03.774138'
+version: 8.2.59
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 544
+- 544
+names:
+  0: person_body
+  1: person_head

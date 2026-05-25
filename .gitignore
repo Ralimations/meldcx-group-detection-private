@@ -1,0 +1,14 @@
+output/*
+.pycache/
+person-detection-angled-2026021100/*
+__pycache__/*
+models/person-detection-medium/*
+models/person-detection-nano/*
+models/peta_gender/best.bin
+media/test9.mp4
+models/person/best.bin
+media/test12.mkv
+models/depth/MiDaS_large.bin
+.cache/*
+media/test17.mp4
+media/test17raw.mp4
